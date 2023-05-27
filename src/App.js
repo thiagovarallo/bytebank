@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react' ;
 import estilos from './App.module.css';
 import { calculaNovoSaldo } from './utils';
 
@@ -32,4 +32,3 @@ export default function App() {
     </>
   );
 }
-
