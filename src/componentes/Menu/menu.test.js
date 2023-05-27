@@ -18,3 +18,11 @@ test('não deve ter no link estrato', () => {
     const linkEstrato = screen.queryByText('Estrato');
     expect(linkEstrato).not.toBeInTheDocument();
 })
+
+test('Renderizar uma list de link com Class link', () => {
+    render(<Menu/>);
+    const links = screen.getAllByRole('link');
+    links.forEach((links) => expect(links).toHaveClass('link'));
+    expect(links).toMatchSnapshot();
+
+})
